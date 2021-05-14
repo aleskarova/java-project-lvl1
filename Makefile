@@ -1,4 +1,7 @@
-install:
+lint:
+	./gradlew checkstyleMain
+
+install: lint
 	./gradlew clean install
 
 run-dist:
