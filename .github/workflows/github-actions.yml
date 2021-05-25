@@ -1,0 +1,7 @@
+name: Github Actions
+on: [push]
+jobs:
+  Check-Codestyle:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make lint
