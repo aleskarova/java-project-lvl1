@@ -1,7 +1,13 @@
 name: Github Actions
 on: [push]
 jobs:
-  Check-Codestyle:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: make build
+      - uses: actions/checkout@v2
+      - name: Set up OpenJDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: '16'
+      - name: Build with Gradle
+        run: make build

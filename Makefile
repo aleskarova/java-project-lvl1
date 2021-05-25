@@ -1,6 +1,9 @@
 lint:
 	./gradlew checkstyleMain
 
+build: lint
+	./gradlew clean build
+
 install: lint
 	./gradlew clean install
 
