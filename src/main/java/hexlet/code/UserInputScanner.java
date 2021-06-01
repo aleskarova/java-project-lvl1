@@ -2,12 +2,12 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-public class UserInputScanner {
+public final class UserInputScanner {
     private static Scanner scanner;
 
-    private UserInputScanner() {}
+    private UserInputScanner() { }
 
-    static public Scanner getScanner() {
+    public static Scanner getScanner() {
         if (scanner == null) {
             scanner = new Scanner(System.in);
         }

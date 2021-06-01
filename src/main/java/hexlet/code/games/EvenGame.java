@@ -4,23 +4,24 @@ import hexlet.code.UserInputScanner;
 
 import java.util.Random;
 
-public class EvenGame extends Game {
+public final class EvenGame {
 
     private static final int ROUNDS_NUMBER = 3;
 
-    private static final String gameRules = "Answer 'yes' if number even otherwise answer 'no'";
+    private static final int MAX_RANDOM_NUMBER = 100;
+
+    private static final String GAME_RULES = "Answer 'yes' if number even otherwise answer 'no'";
 
     private int rightAnswersCount = 0;
 
     private final String userName;
 
-    public EvenGame(String userName) {
-        this.userName = userName;
+    public EvenGame(String name) {
+        this.userName = name;
     }
 
-    @Override
     public void play() {
-        System.out.println(gameRules);
+        System.out.println(GAME_RULES);
         playGame();
         endGame();
     }
@@ -46,7 +47,7 @@ public class EvenGame extends Game {
     }
 
     private static int chooseRandomNumber() {
-        return new Random().nextInt(1000) + 1;
+        return new Random().nextInt(MAX_RANDOM_NUMBER) + 1;
     }
 
     private boolean playRound(final int number) {
@@ -58,9 +59,8 @@ public class EvenGame extends Game {
             System.out.println("Correct!");
             return true;
         } else {
-            String message = "'" + answer + "' is wrong answer ;(. Correct answer was '" +
-                    getCorrectAnswer(number) + "'.\n" +
-                    "Let's try again, " + userName + "!";
+            String message = "'" + answer + "' is wrong answer ;(. Correct answer was '"
+                    + getCorrectAnswer(number) + "'.\n" + "Let's try again, " + userName + "!";
             System.out.println(message);
             return false;
         }
