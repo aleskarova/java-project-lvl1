@@ -3,8 +3,6 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.UserInputScanner;
 
-import java.util.Random;
-
 public final class EvenGame extends Engine {
 
     private static final int MAX_RANDOM_NUMBER = 100;
