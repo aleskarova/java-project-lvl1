@@ -15,3 +15,9 @@
 Суть игры в следующем: пользователю показывается случайное математическое выражение, например `35 + 16`, которое нужно вычислить и записать правильный ответ.
 
 [![asciicast](https://asciinema.org/a/7psYm3OV4rU38Wm2rmqazQdPU.png)](https://asciinema.org/a/7psYm3OV4rU38Wm2rmqazQdPU)
+
+## Игра "НОД"
+
+Суть игры в следующем: пользователю показывается два случайных числа, например, `25 50`. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+
+[![asciicast](https://asciinema.org/a/1qNjDwwpuVQVAF6SaxcB8ox3R.png)](https://asciinema.org/a/1qNjDwwpuVQVAF6SaxcB8ox3R)
