@@ -9,8 +9,8 @@ public final class EvenGame extends Engine {
 
     private static final int MAX_RANDOM_NUMBER = 100;
 
-    public EvenGame(String userName) {
-        super(userName);
+    public EvenGame(String name) {
+        super(name);
     }
 
     @Override
@@ -19,15 +19,11 @@ public final class EvenGame extends Engine {
     }
 
     protected boolean playRound() {
-        int number = chooseRandomNumber();
+        int number = GameHelper.getRandomNumber(MAX_RANDOM_NUMBER);
         System.out.println("Question: " + number);
         System.out.print("Your answer: ");
         String answer = UserInputScanner.getScanner().nextLine().trim().toLowerCase();
         return checkAnswer(answer, getCorrectAnswer(number));
-    }
-
-    private static int chooseRandomNumber() {
-        return new Random().nextInt(MAX_RANDOM_NUMBER) + 1;
     }
 
     private String getCorrectAnswer(final int number) {

@@ -11,8 +11,8 @@ public class CalculatorGame extends Engine {
 
     private static final char[] OPERATORS = {'+', '-', '*'};
 
-    public CalculatorGame(String userName) {
-        super(userName);
+    public CalculatorGame(String name) {
+        super(name);
     }
 
     @Override
@@ -22,9 +22,9 @@ public class CalculatorGame extends Engine {
 
     @Override
     protected final boolean playRound() {
-        int number1 = chooseRandomNumber();
-        int number2 = chooseRandomNumber();
-        char operator = chooseMathOperator();
+        int number1 = GameHelper.getRandomNumber(MAX_RANDOM_NUMBER);
+        int number2 = GameHelper.getRandomNumber(MAX_RANDOM_NUMBER);
+        char operator = getMathOperator();
         System.out.printf("Question: %d %s %d\n", number1, operator, number2);
         System.out.print("Your answer: ");
         String answer = UserInputScanner.getScanner().nextLine();
@@ -40,11 +40,7 @@ public class CalculatorGame extends Engine {
         };
     }
 
-    private int chooseRandomNumber() {
-        return new Random().nextInt(MAX_RANDOM_NUMBER);
-    }
-
-    private char chooseMathOperator() {
+    private char getMathOperator() {
         int index = new Random().nextInt(OPERATORS.length);
         return OPERATORS[index];
     }
