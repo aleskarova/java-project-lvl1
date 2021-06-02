@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.CalculatorGame;
 import hexlet.code.games.EvenGame;
 import hexlet.code.games.GcdGame;
+import hexlet.code.games.PrimeGame;
 import hexlet.code.games.ProgressionGame;
 
 public class App {
@@ -13,6 +14,7 @@ public class App {
     private static final int CALCULATOR_GAME_COMMAND = 3;
     private static final int GCD_GAME_COMMAND = 4;
     private static final int PROGRESSION_GAME_COMMAND = 5;
+    private static final int PRIME_GAME_COMMAND = 6;
 
 
     public static void main(String[] args) {
@@ -34,6 +36,9 @@ public class App {
                 case PROGRESSION_GAME_COMMAND:
                     new ProgressionGame(Cli.greetUser()).play();
                     break;
+                case PRIME_GAME_COMMAND:
+                    new PrimeGame(Cli.greetUser()).play();
+                    break;
                 case EXIT_COMMAND:
                     break;
                 default:
@@ -52,6 +57,7 @@ public class App {
         System.out.println(CALCULATOR_GAME_COMMAND + " - Calculator");
         System.out.println(GCD_GAME_COMMAND + " - GCD");
         System.out.println(PROGRESSION_GAME_COMMAND + " - Progression");
+        System.out.println(PRIME_GAME_COMMAND + " - Prime");
         System.out.println(EXIT_COMMAND + " - Exit");
         System.out.print("Your choice: ");
         return UserInputScanner.getScanner().nextLine();

@@ -6,7 +6,7 @@
 
 ## Игра "Проверка на четность"
 
-Игроку показывается случайное число. И ему нужно ответить `yes`, если число чётное, или `no` — если нечётное
+Игроку показывается случайное число. И ему нужно ответить `yes`, если число чётное, или `no` — если нечётное.
 
 [![asciicast](https://asciinema.org/a/6f0mLXOOj868hZCZK3fNzsW20.png)](https://asciinema.org/a/6f0mLXOOj868hZCZK3fNzsW20)
 
@@ -28,3 +28,9 @@
 Игрок должен определить это число.
 
 [![asciicast](https://asciinema.org/a/x5gVCe5l4rpBHYb2f8dIeEqbu.png)](https://asciinema.org/a/x5gVCe5l4rpBHYb2f8dIeEqbu)
+
+## Игра "Простое ли число?"
+
+Игроку показывается случайное число. Ему нужно ответить `yes`, если число простое, иначе `no`.
+
+[![asciicast](https://asciinema.org/a/oUJHB9kIMJ8VqDZITTzJyj22V.png)](https://asciinema.org/a/oUJHB9kIMJ8VqDZITTzJyj22V)
