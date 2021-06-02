@@ -6,8 +6,12 @@
 
 ## Игра "Проверка на четность"
 
+Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить `yes`, если число чётное, или `no` — если нечётное
+
 [![asciicast](https://asciinema.org/a/6f0mLXOOj868hZCZK3fNzsW20.png)](https://asciinema.org/a/6f0mLXOOj868hZCZK3fNzsW20)
 
 ## Игра "Калькулятор"
+
+Суть игры в следующем: пользователю показывается случайное математическое выражение, например `35 + 16`, которое нужно вычислить и записать правильный ответ.
 
 [![asciicast](https://asciinema.org/a/7psYm3OV4rU38Wm2rmqazQdPU.png)](https://asciinema.org/a/7psYm3OV4rU38Wm2rmqazQdPU)
